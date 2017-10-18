@@ -65,9 +65,12 @@ def addcourse(ncode, nmark, nid):
 	added = "INSERT INTO courses VALUES ('%s',%d,%d)" %(ncode, nmark, nid)+";"
 	c.execute(added)
 
-createavgs();
-display();
-createtable();
+createavgs()
+display()
+try:
+	createtable()
+except:
+	pass
 updateavg(3, 66)
 addcourse("3darts", 99, 9)
 
