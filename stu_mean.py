@@ -70,3 +70,6 @@ display();
 createtable();
 updateavg(3, 66)
 addcourse("3darts", 99, 9)
+
+db.commit()
+db.close()
